@@ -23,3 +23,35 @@ Additional considerations:
   - What needs to live in a persistence layer?
 - Is there some state we need to initialize?
 - Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+
+
+CUP GAME PLAN:
+
+HTML elements:
+1)  3 divs cups
+  - why? to show users an image of the cup
+  - how? imgs 
+
+2)  2 images for cups, one for empty cups, one for cup lifted with ball
+  - why? to show which cup has the ball and which doesn't 
+  - how? imgs
+
+3) 3 buttons for each cup
+  - why? so the user can select a cup
+  - how? add buttons
+
+4) 3 divs for wins, loss, total
+  - why? to display current state to the user
+  - how? text
+
+
+JS events
+1) reset images of cups with each gameplay
+2) addEventListener 'click' for each button
+3) increment total attempts
+4) use math.random to decide which cup is correct
+5) compare clicked cup to what user clicked
+6) increment wins
+7) change image of correct cup
+8) change numbers of win, loss, and total 
+ 
