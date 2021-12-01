@@ -3,17 +3,18 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0;
+    background-color: black;
 }
 
-main {
+/* main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
-}
+} */
 
-section {
+/* section {
     background-color: var(--color5);
     max-width: 80%;
     display: flex;
@@ -32,8 +33,10 @@ header {
     justify-content: flex-end;
     background-color: var(--color3);
     height: var(--header-height);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow); 
 }
+    */
+
 
 
 h2 {
@@ -41,49 +44,40 @@ h2 {
     font-weight: bold;
 }
 
-.gutter-right {
-    margin-right: 20px;
-}
-
-header img {
-    height: var(--header-height);
-}
-
-p {
+/* p {
     margin: var(--gutter);
-}
-  
-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    height: var(--footer-height);
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    box-shadow: var(--shadow);
-}
+} */
 
-.cups {
+
+.all-cups {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    justify-content: center;
+    padding-top: 500px;
     height: 300px;
 }
 
 .cup {
     display: flex;
     flex-direction: column;
-
 }
+
 
 .cup img {
     width: 200px;
 }
 
 .cup button {
-    background-color: black;
+    background-color: yellow;
     margin: 10px;
-    color: magenta;
+    color: black;
     cursor: pointer;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: yellow;
 }
