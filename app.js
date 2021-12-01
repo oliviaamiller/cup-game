@@ -27,6 +27,21 @@ function gameData() {
 
 }
 
+function showBallOne() {
+    var img = document.getElementById('ball-one');
+    img.style.visibility = 'visible';
+}
+
+function showBallTwo() {
+    var img = document.getElementById('ball-two');
+    img.style.visibility = 'visible';
+}
+
+function showBallThree() {
+    var img = document.getElementById('ball-three');
+    img.style.visibility = 'visible';
+}
+
 // set event listeners 
 buttonOne.addEventListener('click', () => {
     resetImages();
@@ -37,13 +52,13 @@ buttonOne.addEventListener('click', () => {
 
     if (randomCup === 0) {
         wins++;
-        cupOne.src = './assets/cupandball.png';
+        showBallOne();
 
     } else if (randomCup === 1) {
-        cupTwo.src = './assets/cupandball.png';
+        showBallTwo();
 
     } else {
-        cupThree.src = './assets/cupandball.png';
+        showBallThree();
     }
 
     gameData();
@@ -57,14 +72,14 @@ buttonTwo.addEventListener('click', () => {
     const randomCup = Math.floor(Math.random() * 3);
 
     if (randomCup === 0) {
-        cupOne.src = './assets/cupandball.png';
+        showBallOne();
 
     } else if (randomCup === 1) {
         wins++;
-        cupTwo.src = './assets/cupandball.png';
+        showBallTwo();
 
     } else {
-        cupThree.src = './assets/cupandball.png';
+        showBallThree();
     }
 
     gameData();
@@ -78,14 +93,14 @@ buttonThree.addEventListener('click', () => {
     const randomCup = Math.floor(Math.random() * 3);
 
     if (randomCup === 0) {
-        cupOne.src = './assets/cupandball.png';
+        showBallOne();
 
     } else if (randomCup === 1) {
-        cupTwo.src = './assets/cupandball.png';
+        showBallTwo();
 
     } else {
         wins++;
-        cupThree.src = './assets/cupandball.png';
+        showBallThree();
     }
 
     gameData();
