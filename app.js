@@ -42,6 +42,9 @@ function showBallThree() {
     img.style.visibility = 'visible';
 }
 
+
+
+
 // set event listeners 
 buttonOne.addEventListener('click', () => {
     resetImages();
